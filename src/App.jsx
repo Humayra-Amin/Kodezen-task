@@ -23,10 +23,10 @@ const App = () => {
         isClearable={true}
         isSearchable={true}
         isDisabled={false}
-        // options={options}
-        // value={selectedValue}
-        // placeholder="Select an option"
-        // isGrouped={true}  // Set to true to enable grouping
+        options={options}
+        value={selectedValue}
+        placeholder="Select an option"
+        // isGrouped={true}
         // isMulti={true}
         // onChangeHandler={handleChange}
       />
