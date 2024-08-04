@@ -10,9 +10,9 @@ const Kzui = ({
   placeholder = 'Select',
 //   isGrouped = false,
   isMulti = false,
-//   onChangeHandler,
+  onChangeHandler,
   onMenuOpen = null,
-//   onSearchHandler = null
+  onSearchHandler = null
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchText, setSearchText] = useState('');
@@ -150,14 +150,14 @@ const Kzui = ({
             selectedValues.map((val) => (
               <span key={val.value} className="kzui-select__multi-value">
                 {val.label}
-                {/* {isClearable && (
+                {isClearable && (
                   <button
                     className="kzui-select__clear"
                     onClick={(e) => handleClear(e, val)}
                   >
                     &times;
                   </button>
-                )} */}
+                )}
               </span>
             ))
           ) : (
@@ -186,9 +186,9 @@ const Kzui = ({
               onClick={(e) => e.stopPropagation()}
             />
           )}
-          {/* <div className="kzui-select__menu">
+          <div className="kzui-select__menu">
             {isGrouped ? renderGroupedOptions() : renderOptions()}
-          </div> */}
+          </div>
         </>
       )}
     </div>
@@ -199,14 +199,14 @@ Kzui.propTypes = {
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
   isDisabled: PropTypes.bool,
-//   options: PropTypes.array.isRequired,
-//   value: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-//   placeholder: PropTypes.string,
-//   isGrouped: PropTypes.bool,
-//   isMulti: PropTypes.bool,
-//   onChangeHandler: PropTypes.func.isRequired,
-//   onMenuOpen: PropTypes.func,
-//   onSearchHandler: PropTypes.func,
+  options: PropTypes.array.isRequired,
+  value: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+  placeholder: PropTypes.string,
+  isGrouped: PropTypes.bool,
+  isMulti: PropTypes.bool,
+  onChangeHandler: PropTypes.func.isRequired,
+  onMenuOpen: PropTypes.func,
+  onSearchHandler: PropTypes.func,
 };
 
 export default Kzui;

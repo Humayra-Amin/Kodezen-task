@@ -26,9 +26,9 @@ const App = () => {
         options={options}
         value={selectedValue}
         placeholder="Select an option"
-        // isGrouped={true}
-        // isMulti={true}
-        // onChangeHandler={handleChange}
+        isGrouped={true}
+        isMulti={true}
+        onChangeHandler={handleChange}
       />
     </div>
   );
