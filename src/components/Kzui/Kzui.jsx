@@ -8,7 +8,7 @@ const Kzui = ({
   options = [],
   value = null,
   placeholder = 'Select',
-//   isGrouped = false,
+  isGrouped = false,
   isMulti = false,
   onChangeHandler,
   onMenuOpen = null,
