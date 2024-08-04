@@ -7,7 +7,7 @@ const Kzui = ({
   isDisabled = false,
   options = [],
   value = null,
-  placeholder = 'Select...',
+  placeholder = 'Select',
 //   isGrouped = false,
   isMulti = false,
 //   onChangeHandler,
